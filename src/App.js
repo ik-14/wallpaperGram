@@ -94,9 +94,9 @@ function App() {
       {search.map((customer, index) => (
         <Card userInfo={customer} key={index} />
       ))}
-      {/* {
-        wallpapers.map(wallpaper => (
-          <div key={wallpaper.id} className='cards'>
+      {/* { */}
+        {/* wallpapers.map(wallpaper => ( */}
+          {/* <div key={wallpaper.id} className='cards'>
             <div className='overlayContainer'>
             <img src={wallpaper.src} className='image'/>
             <div className='over'><a target='blank' href={wallpaper.src}>image link</a>
@@ -107,9 +107,9 @@ function App() {
             <div className='buttonCont'>
             <h1>{wallpaper.name}</h1>
             </div>
-            </div>
-          )) 
-      } */}
+            </div> */}
+          {/* ))  */}
+      {/* } */}
       </article>
     </div>
   );
