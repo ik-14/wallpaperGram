@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+
+.containerAll{
+  display: flex;
+  justify-content: center;
+}
+
+.inputContainer{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inputForm{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway';
+  font-weight: 300;
+  border-bottom: 2px solid grey;
+  width: 100%;
+}
+
+.inputForm input{
+  border: none;
+  border-bottom: 2px solid #ffa364;
+  background-color: transparent;
+  outline: none;
+  margin: 15px;
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.buttons{
+  margin:20px;
+}
+
+.buttons button{
+  margin: 10px;
+  border: 1px solid #e1dede;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  transition: ease 0.5s;
+  font-size: 1.1rem;
+}
+
+.buttons button:hover {
+  box-shadow: inset 30vw 0 0 0 #ffa364;
+}
+
+.searchFilter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 100%;
+  border-top: 2px solid gray;
+}
+
+.cardsContainer{
+  margin: 15vh;
+  margin-top: 30px;
+  display: grid;
+  grid: auto/repeat(2,1fr);
+  gap: 50px;
+}
+
+.cards{
+  border: 3px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.cards img{
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.overlayContainer{
+  position: relative;
+  width: 100%;
+  height: 85%;
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.over{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.583);
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.over a{
+  color: white;
+}
+
+.over h2{
+  margin-top: 30%;
+}
+
+.overlayContainer:hover .over{
+  opacity: 1;
+}
+
+.buttonCont{
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttonCont button{
+  margin: 10px;
+  border: 1px solid #e1dede;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  transition: ease 0.5s;
+  font-size: 1rem;
+}
+
+.buttonCont button:hover {
+  box-shadow: inset 30vw 0 0 0 #ffa364;
+}
+
+@media screen and (max-width: 800px) {
+  .cardsContainer{
+    grid: auto/1fr;
+  }
+  .buttonCont{
+    font-size: 0.5rem;
+  }
+}
+
+footer{
+  margin-top: 30vh;
+}
